@@ -1,0 +1,87 @@
+
+.container1 {
+    display: flex;
+    justify-content: flex-start; /* Align cards to the left */
+    gap: 10px; /* Add some gap between cards */
+  }
+.container1 .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  background: #A9BDA8 ;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+.container1 .card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-size: bold;
+
+}
+.container1 .card .face.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.container1 .card .face.face1 h2 {
+  margin: 0;
+  padding: 0;
+}
+.container1 .card .face.face1 .java {
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: black;
+  text-align: center;
+}
+.container1 .card .face.face1 .python {
+  background-color: black  ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: black;
+  text-align: center;
+}
+}
+.container1 .card .face.face1 .cSharp {
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:black;
+  text-align: center;
+}
+}
+.container1 .card .face.face2 {
+  transition: 0.5s;
+}
+body .container1 .card .face.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: black;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+body .container1 .card:hover .face.face2 {
+  height: 60px;
+}
+body .container1 .card:hover .face.face2 h2 {
+  font-size: 2em;
+}
+body .container1 .card:nth-child(1) .face.face2 {
+  background-image: linear-gradient(40deg, #D9DAD9 0%,  #68A4A5 45%, #4C8055 100%);
+  border-radius: 15px;
+}
+body .container1 .card:nth-child(2) .face.face2 {
+  background-image: linear-gradient(40deg, #EDCBD2 0%,  #80C4B7 45%, #E3856B 100%);
+  border-radius: 15px;
+}
+body .container1 .card:nth-child(3) .face.face2 {
+  background-image: linear-gradient(40deg, #735DA5 5%, #D3C5E5 45%, #8EC9BC 70%,#FBF5AA 100% );
+  border-radius: 15px;
+}
